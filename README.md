@@ -2,6 +2,11 @@
 
 A small machine learning service that predicts whether a bank client will subscribe to a term deposit after a marketing call. The model is served as a web API with FastAPI and packaged with Docker.
 
+## Live Demo
+https://ml-service-sp73.onrender.com/docs
+Hosted on Render's free tier, so it sleeps after about 15 minutes without traffic. The first request after that can take around 30 seconds.
+
+
 ## Data
 
 UCI Bank Marketing dataset: https://archive.ics.uci.edu/dataset/222/bank

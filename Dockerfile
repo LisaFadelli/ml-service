@@ -17,4 +17,5 @@ COPY predict.py model.joblib ./
 
 EXPOSE 9696
 
-CMD ["uvicorn", "predict:app", "--host", "0.0.0.0", "--port", "9696"]
+#CMD ["uvicorn", "predict:app", "--host", "0.0.0.0", "--port", "9696"]
+CMD ["sh", "-c", "uvicorn predict:app --host 0.0.0.0 --port ${PORT:-9696}"]
